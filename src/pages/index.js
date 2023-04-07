@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Button, TextField } from '@mui/material'
-import { createTheme } from '@mui/material/styles'
+import Head from 'next/head';
+import { Submit } from '../components/submit/submit';
+import { ListComponent }  from '../components/list/ListComponent';
 
-const inter = Inter({ subsets: ['latin'] })
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -20,10 +21,8 @@ export default function Home() {
         <h1>
             Crud on React
         </h1>
-        <TextField id="standard-basic" label="Nombre" variant="standard" />
-        <TextField id="standard-basic" label="Apellido" variant="standard" />
-        <Button variant="contained" color="success">Add</Button>
-
+        <Submit />
+        <ListComponent />
         
       </main>
     </>
